@@ -196,6 +196,8 @@ int main()
     //     }
     // }
 
+    // -----------------------------------------------------
+
     // // Q no. 51
     // int num1, num2, max;
     // printf("Enter two nums: ");
@@ -212,22 +214,109 @@ int main()
     //     ++max;
     // }
 
-    // Q no. 52
-    int num1, num2, max, i;
-    printf("Enter two nums: ");
-    scanf("%d%d", &num1, &num2);
-    max = (num1 > num2) ? num1 : num2;
-    for (i = max; i <= max; i--)
+    // -----------------------------------------------------
+
+    // // Q no. 52
+
+    // int num1, num2, max, i;
+    // printf("Enter two nums: ");
+    // scanf("%d%d", &num1, &num2);
+    // max = (num1 > num2) ? num1 : num2;
+    // for (i = max; i <= max; i--)
+    // {
+    //     if (num1 % i == 0 && num2 % i == 0)
+    //     {
+    //         printf("The HCF is  %d", i);
+    //         break;
+    //     }
+    //     if (i == 1)
+    //     {
+    //         break;
+    //     }
+    // }
+
+    // -----------------------------------------------------
+
+    // // Q no. 53
+
+    // int user, sum = 0, i = 1;
+    // printf("Enter a number:");
+    // scanf("%d", &user);
+    // while (user != 0)
+    // {
+    //     int sq = i * i;
+    //     sum += sq;
+    //     i++;
+    //     --user;
+    // }
+    // printf("The sum is %d ", sum);
+
+    // -----------------------------------------------------
+
+    // // Q no. 54
+
+    // float userInput, i, fact, j;
+    // float sum = 0;
+    // printf("Enter a number:");
+    // scanf("%f", &userInput);
+    // for (i = 1; i <= userInput; i++)
+    // {
+    //     for (j = 1; j <= i; j++)
+    //     {
+    //         fact = 1;
+    //         fact *= j;
+    //     }
+    //     sum += 1 / fact;
+    // }
+    // printf("The Sum is %.3f ", sum);
+
+    // -----------------------------------------------------
+
+    // Q no. 54
+
+    int number;
+
+    // Example of break statement
+    printf("Example of break statement:\n");
+    for (number = 0; number < 10; number++)
     {
-        if (num1 % i == 0 && num2 % i == 0)
+        if (number == 5)
         {
-            printf("The HCF is  %d", i);
+            printf("Breaking out of loop at i = %d\n", number);
             break;
         }
-        if (i == 1)
-        {
-            break;
-        }
+        printf("number = %d\n", number);
     }
+
+    // Example of continue statement
+    printf("\nExample of continue statement:\n");
+    for (number = 0; number < 5; number++)
+    {
+        if (number == 2)
+        {
+            printf("Skipping iteration at number = %d\n", number);
+            continue;
+        }
+        printf("number = %d\n", number);
+    }
+
+    // Example of goto statement
+    printf("\nExample of goto statement:\n");
+    number = 0;
+loop:
+    if (number == 3)
+    {
+        printf("Jumping to end of loop at number = %d\n", number);
+        goto end;
+    }
+    printf("number = %d\n", number);
+    number++;
+    goto loop;
+
+end:
+    printf("End of loop\n");
+
+    // QUESTIONS UPTO 55 ENDS HERE
+    // GO TO 01_Lab_Sheet_05.c for other program solutions
     return 0;
 }
