@@ -31,7 +31,7 @@ int main()
     //         printf("The letter is consonant.");
     //     }
     //     else
-    //     {
+    //
     //         printf("Not a letter");
     //     }
     //     break;
