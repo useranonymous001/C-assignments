@@ -62,40 +62,78 @@ int main()
 
     // ---------------------------------------------------
 
-    // Q no. 58
+    // // Q no. 58
 
-    int student[100], num, i, j, temp;
-    printf("Enter no of students: ");
-    scanf("%d", &num);
+    // int student[100], num, i, j, temp;
+    // printf("Enter no of students: ");
+    // scanf("%d", &num);
 
-    for (i = 0; i < num; i++)
+    // for (i = 0; i < num; i++)
+    // {
+    //     printf("Enter marks %d: ", i + 1);
+    //     scanf("%d", &student[i]);
+    // }
+    // printf("\nOriginal Marks: \n");
+    // for (i = 0; i < num; i++)
+    // {
+    //     printf("%d ", student[i]);
+    // }
+    // for (i = 0; i < num; i++)
+    // {
+    //     for (j = i + 1; j < num; j++)
+    //     {
+    //         if (student[i] < student[j])
+    //         {
+    //             temp = student[i];
+    //             student[i] = student[j];
+    //             student[j] = temp;
+    //         }
+    //     }
+    // }
+    // printf("\n");
+    // printf("\n");
+    // printf("Top 5 marks are listed below: \n");
+    // for (i = 0; i < 5; i++)
+    // {
+    //     printf("%d ", student[i]);
+    // }
+
+    //---------------------------------------------------
+
+    // Q no. 59
+    int i, n;
+    printf("Enter no. of elem: ");
+    scanf("%d", &n);
+
+    int elements[n];
+    int positiveCount = 0;
+    int negativeCount = 0;
+    int zeroCount = 0;
+    for (i = 0; i < n; i++)
     {
-        printf("Enter marks %d: ", i + 1);
-        scanf("%d", &student[i]);
+        printf("Enter element %d: ", i + 1);
+        scanf("%d", &elements[i]);
     }
-    printf("\nOriginal Marks: \n");
-    for (i = 0; i < num; i++)
+
+    for (i = 0; i < n; i++)
     {
-        printf("%d ", student[i]);
-    }
-    for (i = 0; i < num; i++)
-    {
-        for (j = i + 1; j < num; j++)
+        if (elements[i] > 0)
         {
-            if (student[i] < student[j])
-            {
-                temp = student[i];
-                student[i] = student[j];
-                student[j] = temp;
-            }
+            positiveCount++;
+        }
+        else if (elements[i] < 0)
+        {
+            negativeCount++;
+        }
+        else
+        {
+            zeroCount++;
         }
     }
-    printf("\n");
-    printf("\n");
-    printf("Top 5 marks are listed below: \n");
-    for (i = 0; i < 5; i++)
-    {
-        printf("%d ", student[i]);
-    }
+
+    printf("\nPositive Count = %d: ", positiveCount);
+    printf("\nNegative Count = %d: ", negativeCount);
+    printf("\nZero Count = %d: ", zeroCount);
+
     return 0;
 }
