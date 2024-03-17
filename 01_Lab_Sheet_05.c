@@ -3,7 +3,7 @@
     Description: C -Assignments B.Sc CSIT 1st Semester
 */
 
-// Questions from 56 - 60 are available here...
+// Questions from 56 - 61 are available here...
 
 #include <stdio.h>
 #include <conio.h>
@@ -137,25 +137,56 @@ int main()
 
     //--------------------------------------------------
 
-    // Q no. 60
+    // // Q no. 60
 
-    int i, n;
-    printf("NO. of Employee: ");
+    // int i, n;
+    // printf("NO. of Employee: ");
+    // scanf("%d", &n);
+
+    // int employeeSalary[n];
+    // for (i = 0; i < n; i++)
+    // {
+    //     printf("Salary of %d emp: ", i + 1);
+    //     scanf("%d", &employeeSalary[i]);
+    // }
+    // for (i = 0; i < n; i++)
+    // {
+    //     if (employeeSalary[i] >= 5000 && employeeSalary[i] < 10000)
+    //     {
+    //         printf("%d", employeeSalary[i]);
+    //     }
+    // }
+
+    //----------------------------------------------------
+
+    // Q no. 61
+
+    int n, i;
+    printf("Enter no. of numbers: ");
     scanf("%d", &n);
 
-    int employeeSalary[n];
+    int numbers[n];
+    int evenSum = 0;
+    int oddSum = 0;
+
     for (i = 0; i < n; i++)
     {
-        printf("Salary of %d emp: ", i + 1);
-        scanf("%d", &employeeSalary[i]);
+        printf("Enter num %d: ", i + 1);
+        scanf("%d", &numbers[i]);
     }
     for (i = 0; i < n; i++)
     {
-        if (employeeSalary[i] >= 5000 && employeeSalary[i] < 10000)
+        if (numbers[i] % 2 == 0)
         {
-            printf("%d", employeeSalary[i]);
+            evenSum += numbers[i];
+        }
+        else
+        {
+            oddSum += numbers[i];
         }
     }
 
+    printf("\nSum of EVEN nums: %d", evenSum);
+    printf("\nSum of ODD nums: %d", oddSum);
     return 0;
 }
