@@ -100,40 +100,62 @@ int main()
 
     //---------------------------------------------------
 
-    // Q no. 59
+    // // Q no. 59
+    // int i, n;
+    // printf("Enter no. of elem: ");
+    // scanf("%d", &n);
+
+    // int elements[n];
+    // int positiveCount = 0;
+    // int negativeCount = 0;
+    // int zeroCount = 0;
+    // for (i = 0; i < n; i++)
+    // {
+    //     printf("Enter element %d: ", i + 1);
+    //     scanf("%d", &elements[i]);
+    // }
+
+    // for (i = 0; i < n; i++)
+    // {
+    //     if (elements[i] > 0)
+    //     {
+    //         positiveCount++;
+    //     }
+    //     else if (elements[i] < 0)
+    //     {
+    //         negativeCount++;
+    //     }
+    //     else
+    //     {
+    //         zeroCount++;
+    //     }
+    // }
+
+    // printf("\nPositive Count = %d: ", positiveCount);
+    // printf("\nNegative Count = %d: ", negativeCount);
+    // printf("\nZero Count = %d: ", zeroCount);
+
+    //--------------------------------------------------
+
+    // Q no. 60
+
     int i, n;
-    printf("Enter no. of elem: ");
+    printf("NO. of Employee: ");
     scanf("%d", &n);
 
-    int elements[n];
-    int positiveCount = 0;
-    int negativeCount = 0;
-    int zeroCount = 0;
+    int employeeSalary[n];
     for (i = 0; i < n; i++)
     {
-        printf("Enter element %d: ", i + 1);
-        scanf("%d", &elements[i]);
+        printf("Salary of %d emp: ", i + 1);
+        scanf("%d", &employeeSalary[i]);
     }
-
     for (i = 0; i < n; i++)
     {
-        if (elements[i] > 0)
+        if (employeeSalary[i] >= 5000 && employeeSalary[i] < 10000)
         {
-            positiveCount++;
-        }
-        else if (elements[i] < 0)
-        {
-            negativeCount++;
-        }
-        else
-        {
-            zeroCount++;
+            printf("%d", employeeSalary[i]);
         }
     }
-
-    printf("\nPositive Count = %d: ", positiveCount);
-    printf("\nNegative Count = %d: ", negativeCount);
-    printf("\nZero Count = %d: ", zeroCount);
 
     return 0;
 }
