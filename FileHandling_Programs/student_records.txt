@@ -1,0 +1,3 @@
+rohan 12 A
+Khatri 23 B
+haluwa 34 C
