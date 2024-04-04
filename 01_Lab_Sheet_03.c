@@ -9,7 +9,7 @@
 #include <conio.h>
 int main()
 {
-    // Q no. 31
+    // Q no.31
     // char name;
     // printf("Enter a character: ");
     // scanf("%c", &name);
@@ -43,7 +43,7 @@ int main()
 
     // Already done in Q no. 31
 
-    // // Q no 36
+    // Q no 36
     // int id;
     // char userName[100];
     // int salary;

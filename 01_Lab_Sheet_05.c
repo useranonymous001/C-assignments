@@ -100,7 +100,7 @@ int main()
 
     //---------------------------------------------------
 
-    // // Q no. 59
+    // Q no. 59
     // int i, n;
     // printf("Enter no. of elem: ");
     // scanf("%d", &n);
@@ -153,7 +153,7 @@ int main()
     // {
     //     if (employeeSalary[i] >= 5000 && employeeSalary[i] < 10000)
     //     {
-    //         printf("%d", employeeSalary[i]);
+    //         printf("%d ", employeeSalary[i]);
     //     }
     // }
 
@@ -161,32 +161,32 @@ int main()
 
     // Q no. 61
 
-    int n, i;
-    printf("Enter no. of numbers: ");
-    scanf("%d", &n);
+    // int n, i;
+    // printf("Enter no. of numbers: ");
+    // scanf("%d", &n);
 
-    int numbers[n];
-    int evenSum = 0;
-    int oddSum = 0;
+    // int numbers[n];
+    // int evenSum = 0;
+    // int oddSum = 0;
 
-    for (i = 0; i < n; i++)
-    {
-        printf("Enter num %d: ", i + 1);
-        scanf("%d", &numbers[i]);
-    }
-    for (i = 0; i < n; i++)
-    {
-        if (numbers[i] % 2 == 0)
-        {
-            evenSum += numbers[i];
-        }
-        else
-        {
-            oddSum += numbers[i];
-        }
-    }
+    // for (i = 0; i < n; i++)
+    // {
+    //     printf("Enter num %d: ", i + 1);
+    //     scanf("%d", &numbers[i]);
+    // }
+    // for (i = 0; i < n; i++)
+    // {
+    //     if (numbers[i] % 2 == 0)
+    //     {
+    //         evenSum += numbers[i];
+    //     }
+    //     else
+    //     {
+    //         oddSum += numbers[i];
+    //     }
+    // }
 
-    printf("\nSum of EVEN nums: %d", evenSum);
-    printf("\nSum of ODD nums: %d", oddSum);
+    // printf("\nSum of EVEN nums: %d", evenSum);
+    // printf("\nSum of ODD nums: %d", oddSum);
     return 0;
 }

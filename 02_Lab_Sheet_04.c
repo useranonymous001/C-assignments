@@ -31,10 +31,8 @@ int main()
     //         printf("The letter is consonant.");
     //     }
     //     else
-    //
+
     //         printf("Not a letter");
-    //     }
-    //     break;
     // }
 
     // -----------------------------------------------------
@@ -48,6 +46,8 @@ int main()
     // }
 
     // // using while loop
+    // printf("\n");
+    // printf("\n");
     // while (j <= 100)
     // {
     //     printf("%d ", j);
@@ -55,6 +55,8 @@ int main()
     // }
 
     // // using do while loop
+    // printf("\n");
+    // printf("\n");
     // do
     // {
     //     printf("%d ", k);
@@ -69,15 +71,16 @@ int main()
     // scanf("%d", &num);
 
     // // using for loop
-    // // for (i = 1; i <= num; i++)
-    // // {
-    // //     if (i % 2 == 0)
-    // //     {
-    // //         printf("%d ", i);
-    // //     }
-    // // }
+    // for (i = 1; i <= num; i++)
+    // {
+    //     if (i % 2 == 0)
+    //     {
+    //         printf("%d ", i);
+    //     }
+    // }
 
     // // using while loop
+    // printf("\n");
     // while (j <= num)
     // {
     //     if (j % 2 == 0)
@@ -88,6 +91,7 @@ int main()
     // }
 
     // // // using do while loop
+    // printf("\n");
     // do
     // {
     //     if (k % 2 == 0)
@@ -114,6 +118,7 @@ int main()
     // }
 
     // // using while loop
+    // printf("\n");
     // while (j <= num)
     // {
     //     if (j % 2 != 0)
@@ -124,6 +129,7 @@ int main()
     // }
 
     // // // using do while loop
+    // printf("\n");
     // do
     // {
     //     if (k % 2 != 0)
@@ -146,10 +152,11 @@ int main()
     //     printf("%d ", next);
     // }
 
-    // -----------------------------------------------------
+    // -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -
 
-    // // Q no. 49
-    // int number, sum = 0, remainder;
+    // Q no. 49
+    // int number,
+    //     sum = 0, remainder;
     // printf("Enter 3 digit number: ");
     // scanf("%3d", &number);
 
@@ -237,7 +244,7 @@ int main()
 
     // -----------------------------------------------------
 
-    // // Q no. 53
+    // Q no. 53
 
     // int user, sum = 0, i = 1;
     // printf("Enter a number:");

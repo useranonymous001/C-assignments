@@ -15,7 +15,7 @@ int main()
     // scanf("%d", &input);
     // if (input % 5 == 0)
     // {
-    //     printf("It is divisible !");
+    //     printf("It is divisible by 5!");
     // }
     // else
     // {
@@ -149,28 +149,28 @@ int main()
     // }
 
     // Q no. 43 continued (next part)
-    float unit, bill;
-    printf("Enter the no. of units consumed: ");
-    scanf("%f", &unit);
-    if (unit < 0)
-    {
-        printf("Sorry, unit cannot be less than 1");
-        return 1;
-    }
-    else if (unit <= 20)
-    {
-        printf("Your bill is Rs.80");
-    }
-    else if (unit > 20 && unit <= 120)
-    {
-        bill = 7.30 * unit;
-        printf("Your bill is %.2f", bill);
-    }
-    else
-    {
-        bill = 9 * unit;
-        printf("Your bill is %.2f", bill);
-    }
+    // float unit, bill;
+    // printf("Enter the no. of units consumed: ");
+    // scanf("%f", &unit);
+    // if (unit < 0)
+    // {
+    //     printf("Sorry, unit cannot be less than 1");
+    //     return 1;
+    // }
+    // else if (unit <= 20)
+    // {
+    //     printf("Your bill is Rs.80");
+    // }
+    // else if (unit > 20 && unit <= 120)
+    // {
+    //     bill = 7.30 * unit;
+    //     printf("Your bill is %.2f", bill);
+    // }
+    // else
+    // {
+    //     bill = 9 * unit;
+    //     printf("Your bill is %.2f", bill);
+    // }
 
     // If You have completed this path go for the 02_Lab_Sheet_04 for other half questions
 
