@@ -1,5 +1,5 @@
 /*
-Description:  LCM
+Description:  LCM and HCF
 Author: Rohan Khatri
 Date: 2024/04/04
 */
@@ -16,14 +16,15 @@ int main()
     printf("Enter two numbers : ");
     scanf("%d%d", &num1, &num2);
 
-    lcm = lcmFinder(num1, num2);
-    hcf = hcfFinder(num1, num2);
+    lcm = lcmFinder(num1, num2); // calling lcmFinder
+    hcf = hcfFinder(num1, num2); // calling hcfFinder
     printf("\nThe LCM is of %d and %d is %d", num1, num2, lcm);
     printf("\n\nThe LCM is of %d and %d is %d", num1, num2, hcf);
 
     return 0;
 }
 
+// finding LCM
 int lcmFinder(int num1, int num2)
 {
     int greatest;
@@ -38,6 +39,7 @@ int lcmFinder(int num1, int num2)
     }
 }
 
+// finding HCF
 int hcfFinder(int num1, int num2)
 {
     int smallest = (num1 < num2) ? num1 : num2;
